@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_layout_posts_grid_for_categories",
+  "info": {
+    "displayName": "postsGridForCategory",
+    "icon": "grip-horizontal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 300
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "moreLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "action.link"
+    },
+    "maxColumns": {
+      "type": "integer",
+      "default": 3,
+      "required": true,
+      "max": 4
+    }
+  }
+}

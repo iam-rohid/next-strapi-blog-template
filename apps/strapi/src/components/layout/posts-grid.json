@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_layout_posts_grids",
+  "info": {
+    "displayName": "postsGrid",
+    "icon": "grip-horizontal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false,
+      "maxLength": 300
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post"
+    },
+    "moreLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "action.link"
+    },
+    "maxColumns": {
+      "type": "integer",
+      "default": 3,
+      "required": true,
+      "max": 4
+    }
+  }
+}

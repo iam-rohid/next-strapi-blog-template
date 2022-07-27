@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_layout_newsletters",
+  "info": {
+    "displayName": "newsletter",
+    "icon": "mail-bulk"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

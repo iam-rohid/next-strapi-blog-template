@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_action_links",
+  "info": {
+    "displayName": "link",
+    "icon": "play"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
